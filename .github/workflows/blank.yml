@@ -30,7 +30,7 @@ jobs:
         run: echo "Hello, world!"
       - name: Mostrando variables de entorno
         run: |
-          "Variable: ${{env.variable}}"
-          "Region: ${{env.region}}"
+          echo "Variable: ${{env.variable}}"
+          echo "Region: ${{env.region}}"
         
         
