@@ -35,5 +35,5 @@ jobs:
           echo "Region: ${{env.region}}"
         
       - name: Mostrando por defecto
-        run: echo ${{github.event}}
+        run: echo ${{toJson(github.event)}}
           
