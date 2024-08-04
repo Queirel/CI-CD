@@ -15,6 +15,10 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
+    env:
+      variable: asd
+      region: arg
+
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -22,143 +26,11 @@ jobs:
     steps:
       # Runs a single command using the runners shell
 
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"      
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-      - name: Run a one-line script
-        run: echo "Hello, world!"
+      - name: Hola mundo
+        run: echo "Hello, world!"
+      - name: Mostrando variables de entorno
+        run: |
+          "Variable: ${{env.variable}}"
+          "Region: ${{env.region}}"
+        
+        
