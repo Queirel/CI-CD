@@ -28,9 +28,12 @@ jobs:
 
       - name: Hola mundo
         run: echo "Hello, world!"
+
       - name: Mostrando variables de entorno
         run: |
           echo "Variable: ${{env.variable}}"
           echo "Region: ${{env.region}}"
         
-        
+      - name: Mostrando por defecto
+        run: echo ${{github.event}}
+          
