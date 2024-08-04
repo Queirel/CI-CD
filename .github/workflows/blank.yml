@@ -36,5 +36,5 @@ jobs:
         
       - name: Mostrando por defecto
         run: |
-          echo ${{toJson(github.event)}}
+          echo "${{toJson(github.event)}}"
           
