@@ -37,4 +37,10 @@ jobs:
       - name: Mostrando por defecto
         run: |
           echo "${{toJson(github.event)}}"
+      - name: Nombre por valor
+        run: |
+          echo "${{toJson(github.name)}}"
+      - name: Nombre por variable
+        run: |
+          echo "$GITHUB_EVENT_NAME"
           
