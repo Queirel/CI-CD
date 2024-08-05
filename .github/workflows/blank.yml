@@ -40,13 +40,13 @@ jobs:
       - name: Github event
         run: |
           echo "probando: ${{toJson(github.event)}}"
-      # - name: Mostrando por defecto
-      #   run: |
-      #     echo "a ver: ${{toJson(github.event)}}"
+      - name: Mostrando por defecto
+        run: |
+          echo "a ver: ${{toJson(github.event.after)}}"
           
       # - name: Nombre por valor
       #   run: |
-      # - name: Nombre por variable
-      #   run: |
-      #     echo "etc: $GITHUB_EVENT_NAME"
+      - name: Nombre por variable
+        run: |
+          echo "etc: $GITHUB_ACTOR"
           
