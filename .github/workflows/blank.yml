@@ -34,13 +34,19 @@ jobs:
           echo "Variable: ${{env.variable}}"
           echo "Region: ${{env.region}}"
         
-      - name: Mostrando por defecto
+      - name: Github
         run: |
-          echo "${{toJson(github.event)}}"
-      - name: Nombre por valor
+          echo "${{toJson(github)}}"
+      - name: Github event
         run: |
-          echo "${{toJson(github.event.name)}}"
-      - name: Nombre por variable
-        run: |
-          echo "etc: $GITHUB_EVENT_NAME"
+          echo "probando: ${{toJson(github.event)}}"
+      # - name: Mostrando por defecto
+      #   run: |
+      #     echo "a ver: ${{toJson(github.event)}}"
+          
+      # - name: Nombre por valor
+      #   run: |
+      # - name: Nombre por variable
+      #   run: |
+      #     echo "etc: $GITHUB_EVENT_NAME"
           
