@@ -39,8 +39,8 @@ jobs:
           echo "${{toJson(github.event)}}"
       - name: Nombre por valor
         run: |
-          echo "${{toJson(github.name)}}"
+          echo "${{toJson(github.event.name)}}"
       - name: Nombre por variable
         run: |
-          echo "$GITHUB_EVENT_NAME"
+          echo "etc: $GITHUB_EVENT_NAME"
           
