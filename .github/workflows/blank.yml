@@ -18,6 +18,7 @@ jobs:
     env:
       variable: asd
       region: arg
+      passi: ${{secrets.PASS}}
 
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -33,6 +34,7 @@ jobs:
         run: |
           echo "Variable: ${{env.variable}}"
           echo "Region: ${{env.region}}"
+          echo "Region: ${{env.passi}}"
         
       - name: Github
         run: |
